@@ -51,3 +51,21 @@ const addPrompt = () => { // prompt to ask user what they would like to add
         });
 };
 
+const updatePrompt = () => {
+    inquirer
+        .prompt({
+            name: 'whatToUpdate',
+            type: 'list',
+            message: 'What would you like to update?',
+            choices: ['DEPARTMENT', 'ROLE', 'EMOLOYEE'],
+        })
+        .then((answer) => {
+            if (answer.whatToUpdate === 'DEPARTMENT') {
+                departmentUpdate();
+            } else if (answer.whatToAdd === 'ROLE') {
+                roleUpdate();
+            } else if (answer.whatToUpdate === 'EMPLOYEE') {
+                employeeUpdate();
+            }
+        })
+};
