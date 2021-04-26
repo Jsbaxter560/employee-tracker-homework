@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Jsbaxter560/employee-tracker-homework#readme",
   "dependencies": {
+    "fs": "0.0.1-security",
     "inquirer": "^8.0.0",
     "mysql": "^2.18.1"
   }
