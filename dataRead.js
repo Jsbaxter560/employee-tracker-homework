@@ -1,5 +1,5 @@
 const mysql = require('mysql'); // establish dependency on mysql
-const inquirer = require('inquirer'); // establish dependency on inquirer
+const inquirer = require("inquirer"); // establish dependency on inquirer
 const fs = require('fs'); // establish dependency on fs
 const { restoreDefaultPrompts } = require('inquirer');
 
@@ -51,7 +51,7 @@ const addPrompt = () => { // prompt to ask user what they would like to add
         });
 };
 
-const updatePrompt = () => {
+const updatePrompt = () => { // prompt to as user what they wish to update
     inquirer
         .prompt({
             name: 'whatToUpdate',
